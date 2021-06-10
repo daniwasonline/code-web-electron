@@ -20,8 +20,10 @@
   "build": {
     "appId": "com.dannington.codewebelectron",
     "productName": "Visual Studio Code Server",
+    "icon": "1200x1200.png",
     "linux": {
-      "target": [ {"target": "appimage"}, {"target": "rpm"}, {"target": "pacman"}, {"target": "tar.gz"} ]
+      "target": [ {"target": "appimage"}, {"target": "rpm"}, {"target": "pacman"}, {"target": "tar.gz"} ],
+      "icon": "1200x1200.png"
     }
   }
 }
