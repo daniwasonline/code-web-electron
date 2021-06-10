@@ -1,0 +1,27 @@
+{
+  "name": "code-web-electron",
+  "version": "1.0.0",
+  "description": "A Code Server client made in Electron",
+  "main": "./main.js",
+  "repository": "https://github.com/Dannnington/code-web-electron.git",
+  "author": "Daniel Hyders <git@bean.codes>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "electron": "^13.1.2",
+    "electron-builder": "^22.10.5"
+  },
+  "build": {
+    "appId": "com.dannington.codewebelectron",
+    "productName": "Visual Studio Code Server",
+    "linux": {
+      "target": [ {"target": "appimage"}, {"target": "rpm"}, {"target": "pacman"}, {"target": "tar.gz"} ]
+    }
+  }
+}
